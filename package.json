@@ -6,7 +6,8 @@
   "description": "分娩保障跨域结算的服务端领域基础",
   "scripts": {
     "test": "node --test",
-    "build": "node --check src/domain.js && node --check src/repository.js && node --check src/service.js && node --check src/cli.js",
-    "check:sample": "node src/cli.js validate data/sample.json"
+    "build": "node --check src/domain.js && node --check src/repository.js && node --check src/settlement.js && node --check src/allowance.js && node --check src/appeal.js && node --check src/service.js && node --check src/cli.js",
+    "check:sample": "node src/cli.js validate data/sample.json",
+    "demo": "node src/cli.js scenario data/scenario.json"
   }
 }
